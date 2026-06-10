@@ -1,6 +1,6 @@
 package partie1;
 
-public class PotionDeBase implements Potion{
+public class PotionDeBase implements Potion {
     @Override
     public int getPV() {
         return 50;

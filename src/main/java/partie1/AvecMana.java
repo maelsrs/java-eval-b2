@@ -1,6 +1,6 @@
 package partie1;
 
-public class AvecMana extends PotionDecorator{
+public class AvecMana extends PotionDecorator {
     public AvecMana(Potion potion) {
         super(potion);
     }

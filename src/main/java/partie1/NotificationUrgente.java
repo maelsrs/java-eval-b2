@@ -1,6 +1,6 @@
 package partie1;
 
-public class NotificationUrgente extends Notification{
+public class NotificationUrgente extends Notification {
     public NotificationUrgente(CanalEnvoi canal) {
         super(canal);
     }

@@ -5,9 +5,11 @@ public class Personnage {
     private final String classe; // obligatoire (ex: Guerrier, Mage, Voleur)
     private int pv; // défaut : 1
 
-    private int mana; // défaut : 50
-    private String arme; // défaut : "Poings"
-    private boolean estElite; // défaut : false
+    private final int mana; // défaut : 50
+    private final String arme; // défaut : "Poings"
+    private final boolean estElite; // défaut : false
+
+    private EtatPersonnage etat;
 
     private Personnage(Builder builder) {
         this.nom = builder.nom;
@@ -16,6 +18,26 @@ public class Personnage {
         this.mana = builder.mana;
         this.arme = builder.arme;
         this.estElite = builder.estElite;
+    }
+
+    public void setPv(int pv) {
+        this.pv = pv;
+    }
+
+    public int getPv() {
+        return pv;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public EtatPersonnage getEtat() {
+        return etat;
+    }
+
+    public void setEtat(EtatPersonnage etat) {
+        this.etat = etat;
     }
 
     private class Builder {
