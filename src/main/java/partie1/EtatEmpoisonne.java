@@ -2,7 +2,7 @@ package partie1;
 
 public class EtatEmpoisonne extends EtatPersonnage {
 
-    public EtatVivant(Personnage personnage) {
+    public EtatEmpoisonne(Personnage personnage) {
         this.personnage = personnage;
     }
 
